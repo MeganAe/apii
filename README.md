@@ -1,6 +1,3 @@
-# 🤖 API IA Centrale — 21st.dev × Vercel
-
-API Node.js serverless déployée sur Vercel. Un seul endpoint, toutes tes apps l'utilisent.
 
 ## Structure
 
@@ -18,39 +15,6 @@ my-ai-api/
 ├── .env.example
 └── README.md
 ```
-
-## Démarrage
-
-### 1. Installe les dépendances
-```bash
-npm install
-```
-
-### 2. Configure les variables d'environnement
-```bash
-cp .env.example .env
-# Remplis API_KEY_21ST et MY_API_SECRET_KEY
-```
-
-### 3. Déploie l'agent 21st.dev
-```bash
-npx @21st-sdk/cli login    # connecte avec ta clé 21st.dev
-npx @21st-sdk/cli deploy   # déploie l'agent
-```
-
-### 4. Déploie sur Vercel
-```bash
-npx vercel               # déploiement preview
-npx vercel --prod        # déploiement production
-```
-
-### Variables d'env à configurer dans Vercel
-Dans le dashboard Vercel → Settings → Environment Variables :
-- `API_KEY_21ST`
-- `AGENT_BASE_URL`
-- `MY_API_SECRET_KEY`
-
----
 
 ## Endpoints
 
